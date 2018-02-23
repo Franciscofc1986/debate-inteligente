@@ -1,6 +1,4 @@
 -- DATABASE: temlogica_db
-SET @tamanhoTitulo = 100;
-SET @tamanhoDescricao = 4000;
 
 CREATE TABLE usuario(
     usuario_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -15,8 +13,8 @@ CREATE TABLE usuario(
 
 CREATE TABLE debate(
     debate_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    titulo_debate VARCHAR(@tamanhoTitulo),
-    descricao_debate VARCHAR(@tamanhoDescricao),
+    titulo_debate VARCHAR(100),
+    descricao_debate VARCHAR(4000),
     autor_id_debate INT UNSIGNED,
     data_cadastro_debate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -39,7 +37,7 @@ CREATE TABLE debate_debate(
 
 CREATE TABLE resposta(
     resposta_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    texto_resposta VARCHAR(@tamanhoDescricao),
+    texto_resposta VARCHAR(4000),
     ordem_resposta SMALLINT UNSIGNED,
     autor_id_resposta INT UNSIGNED,
     debate_id_resposta INT UNSIGNED,
@@ -51,8 +49,8 @@ CREATE TABLE resposta(
 
 CREATE TABLE argumento(
     argumento_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    titulo_argumento VARCHAR(@tamanhoTitulo),
-    descricao_argumento VARCHAR(@tamanhoDescricao),
+    titulo_argumento VARCHAR(100),
+    descricao_argumento VARCHAR(4000),
     status_argumento TINYINT(1) DEFAULT 1,
     data_cadastro_argumento TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     resposta_id_argumento INT UNSIGNED,
@@ -62,8 +60,8 @@ CREATE TABLE argumento(
 
 CREATE TABLE premissa(
     premissa_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    titulo_premissa VARCHAR(@tamanhoTitulo),
-    descricao_premissa VARCHAR(@tamanhoDescricao),
+    titulo_premissa VARCHAR(100),
+    descricao_premissa VARCHAR(4000),
     status_premissa TINYINT(1) DEFAULT 1,
     data_cadastro_premissa TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     argumento_id_premissa INT UNSIGNED,
@@ -79,11 +77,11 @@ CREATE TABLE tipo_erro(
 
 CREATE TABLE erro(
     erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    titulo_erro VARCHAR(@tamanhoTitulo),
-    descricao_erro VARCHAR(@tamanhoDescricao),
-    nome_original VARCHAR(@tamanhoTitulo),
+    titulo_erro VARCHAR(100),
+    descricao_erro VARCHAR(4000),
+    nome_original VARCHAR(100),
     tipo_erro_id INT UNSIGNED,
-    fonte_erro VARCHAR(@tamanhoTitulo),
+    fonte_erro VARCHAR(100)
 );
 
 CREATE TABLE exemplo_erro(
@@ -124,7 +122,7 @@ CREATE TABLE usuario_resposta_erro(
     usuario_resposta_erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     resposta_erro_id INT UNSIGNED,
     usuario_sinalizador_id INT UNSIGNED,
-    comentario_sinalizador VARCHAR(@tamanhoDescricao),
+    comentario_sinalizador VARCHAR(4000),
     ordem_comentario SMALLINT UNSIGNED,
     data_cadastro_resposta_sinalizador TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (resposta_erro_id) REFERENCES resposta_erro(resposta_erro_id) ON DELETE CASCADE
@@ -134,7 +132,7 @@ CREATE TABLE usuario_argumento_erro(
     usuario_argumento_erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     argumento_erro_id INT UNSIGNED,
     usuario_sinalizador_id INT UNSIGNED,
-    comentario_sinalizador VARCHAR(@tamanhoDescricao),
+    comentario_sinalizador VARCHAR(4000),
     ordem_comentario SMALLINT UNSIGNED,
     data_cadastro_argumento_sinalizador TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (argumento_erro_id) REFERENCES argumento_erro(argumento_erro_id) ON DELETE CASCADE
@@ -144,7 +142,7 @@ CREATE TABLE usuario_premissa_erro(
     usuario_premissa_erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     premissa_erro_id INT UNSIGNED,
     usuario_sinalizador_id INT UNSIGNED,
-    comentario_sinalizador VARCHAR(@tamanhoDescricao),
+    comentario_sinalizador VARCHAR(4000),
     ordem_comentario SMALLINT UNSIGNED,
     data_cadastro_premissa_sinalizador TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (premissa_erro_id) REFERENCES premissa_erro(premissa_erro_id) ON DELETE CASCADE
