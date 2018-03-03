@@ -1,21 +1,18 @@
-//   angular.module('myApp', ['ngMaterial'])
-//   .config(function($mdThemingProvider) {
-//     $mdThemingProvider.theme('default')
-//       .primaryPalette('blue', {
-//         'default': '400',
-//         'hue-1': '100',
-//         'hue-2': '600',
-//         'hue-3': 'A100'
-//       })
-//       .accentPalette('orange')
-//       .warnPalette('yellow')
-//       .backgroundPalette('grey');
-//   });
+//menu lateral
+$('.menu-1').sideNav({
+    menuWidth: 300, // Default is 300
+    edge: 'left', // Choose the horizontal origin
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    draggable: true, // Choose whether you can drag to open on touch screens,
+    onOpen: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
+    onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
+});
 
-angular.module('aloMundo', ['ngMaterial']).controller('ToastEx', function($scope, $mdToast) {
-$mdToast.show(
-        $mdToast.simple('Alô Mundo Toast!')
-        .position('left bottom')
-        .hideDelay(3000)
-);
+$('.menu-2').sideNav({
+    menuWidth: 300, // Default is 300
+    edge: 'right', // Choose the horizontal origin
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    draggable: true, // Choose whether you can drag to open on touch screens,
+    onOpen: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
+    onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
 });

@@ -1,30 +1,64 @@
-  <html lang="pt">
-     <head>
-           <meta charset="utf-8" />
-        <link rel="stylesheet" href="lib/angular-material/angular-material.css">
-     </head>
-     <body ng-app="aloMundo" ng-controller="ToastEx" ng-cloak>
-        <md-toolbar class="md-warn">
-           <div class="md-toolbar-tools">
-              <h2 class="md-flex">Tem lógica ?</h2>
-           </div>
-        </md-toolbar>
-        <md-content flex layout-padding>
-            <p> <md-button class="md-raised md-primary md-hue-1">Clique aqui!</md-button></p>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-           <p> <md-button class="md-primary">Clique aqui!</md-button>
-               <md-button class="md-primary md-hue-1">Clique aqui!</md-button>
-               <md-button class="md-primary md-hue-2">Clique aqui!</md-button>
-               <md-button class="md-accent">ou talvez aqui</md-button>
-               <md-button class="md-warn">Cuidado</md-button></p>
-        </md-content>
-     </body>
-     <script src="lib/angular/angular.js"></script>
-     <script src="lib/angular-animate/angular-animate.js"></script>
-     <script src="lib/angular-aria/angular-aria.js"></script>
-     <script src="lib/angular-messages/angular-messages.js"></script>
-     <script src="lib/angular-material/angular-material.js"></script>
-     <script src="js/app.js"></script>
-  </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title >Tem Lógica</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <nav class="z-depth-5">
+      <a href="#" data-activates="slide-out" class="button-collapse menu-1 show-on-large"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="slide-out-2" class="right button-collapse menu-2 show-on-large"><i class="material-icons">apps</i></a>
+      <div class="nav-wrapper grey darken-3">
+        <a href="#" class="brand-logo title-1">Tem lógica ?</a>
+        <!--<ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">SOBRE O SITE</a></li>
+          <li><a href="badges.html">REGRAS</a></li>
+          <li><a href="collapsible.html">CONTATO</a></li>
+          <li><a href="collapsible.html">SAIR</a></li>
+        </ul>-->
+      </div>
+      
+    </nav>
+
+    
+    <ul id="slide-out" class="side-nav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="img/background.png">
+        </div>
+        <a href="#!user"><img class="circle" src="img/default.jpg"></a>
+        <a href="#!name"><span class="bold black-text name">Francisco de Faria Cardoso</span></a>
+        <a href="#!email"><span class="black-text email">francisco_faria@inatel.br</span></a>
+      </div></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Acesso rápido</a></li>
+      <li><a href="#!"><i class="material-icons">home</i>Minha pagina inicial</a></li>
+      <li><a href="#!"><i class="material-icons">playlist_add</i>Criar um debate</a></li>
+      <li><a href="#!"><i class="material-icons">notifications</i>Notificações</a></li>
+      <li><a href="#!"><i class="material-icons">person_add</i>Convidar amigo</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Sair</a></li>
+      <li><a class="waves-effect" href="#!"><i class="material-icons">exit_to_app</i>Deslogar</a></li>
+    </ul>
+
+    <ul id="slide-out-2" class="side-nav">
+      <li><a href="#!"><i class="material-icons">info</i>Sobre o Site</a></li>
+      <li><a href="#!"><i class="material-icons">dvr</i>Regras</a></li>
+      <li><a href="#!"><i class="material-icons">message</i>Contato</a></li>
+    </ul>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
+
