@@ -10,3 +10,7 @@
     height: auto;
 }
 
+.texto_vetado{
+    text-decoration: line-through;
+}
+
