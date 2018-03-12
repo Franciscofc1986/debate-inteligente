@@ -29,6 +29,8 @@
         </ul>
     </div>-->
 
+
+
   <div class="fixed-action-btn toolbar">
     <a class="btn-floating btn-large grey darken-3">
       <i class="large material-icons">mode_edit</i>
@@ -82,12 +84,15 @@
                         <span class="card-title">Argumentos</span>
                         <ul class="collapsible" data-collapsible="accordion">
                             <li>
-                                <div class="collapsible-header texto_vetado red-text">
-                                    <i class="material-icons">filter_drama</i>
-                                    <p>Olhando para o horizonte vejo uma reta ao contrário de um arco.
+                            <div class="progress red lighten-5" style=" margin-left: 2%; width: 95%;">
+                                <div class="determinate red" style="width: 70%"></div>
+                            </div>
+                                <div class="collapsible-header ">
+                                
+                                    <i class="material-icons red-text">check_circle</i>
+                                    <p class="texto_vetado red-text">Olhando para o horizonte vejo uma reta ao contrário de um arco.
                                     Olhando para o horizonte vejo uma reta ao contrário de um arco.
                                     Olhando para o horizonte vejo uma reta ao contrário de um arco.</p>
-                                    <p><span class="new badge red accent-2" data-badge-caption="">3</span></p>
                                     
                                 </div>
                                 <div class="collapsible-body"><p>Ao olhar para o horizonte eu vejo uma 
@@ -107,9 +112,8 @@
                             </li>
                             <li>
                                 <div class="collapsible-header texto_vetado red-text">
-                                    <i class="material-icons">place</i>
+                                    <i class="material-icons">check_circle</i>
                                     As fotos da Nasa mostram a terra plana
-                                    <p><span class="new badge red accent-2" data-badge-caption="">3</span></p>
                                 </div>
                                 <div class="collapsible-body"><p>Nas missões apolo 11 e 12, as fotos 
                                     divulgadas pela Nasa mostram o planeta com uma superficie plana.</p>
@@ -166,7 +170,7 @@
                         <ul class="collapsible" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header">
-                                    <i class="material-icons">filter_drama</i>
+                                    <i class="material-icons">check_circle</i>
                                     <p>Olhando para o horizonte vejo uma reta ao contrário de um arco/p>
                                     <p><span class="new badge red accent-2" data-badge-caption="">2</span></p>
                                     
@@ -185,7 +189,7 @@
                             </li>
                             <li>
                                 <div class="collapsible-header">
-                                <i class="material-icons">place</i>
+                                <i class="material-icons">check_circle</i>
                                 As fotos da Nasa mostram a terra plana
                                 </div>
                                 <div class="collapsible-body"><p>Nas missões apolo 11 e 12, as fotos 
@@ -296,7 +300,11 @@
         </div>
       </div>-->
 
-    
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
 
     <?php include_once 'rodape.php'; ?>
     

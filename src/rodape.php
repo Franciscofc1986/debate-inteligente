@@ -17,5 +17,11 @@ echo '<footer class="page-footer grey darken-3">
                 <a class="grey-text text-lighten-4 right" href="#!">Sobre o projeto</a>
             </div>
         </div>
-    </footer>';
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script> 
+  </body>
+</html>';
 ?>
