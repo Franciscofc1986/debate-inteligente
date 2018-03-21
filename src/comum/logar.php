@@ -16,12 +16,16 @@ $result = $statement->fetch(\PDO::FETCH_ASSOC);
 if($result)
 {
     $_SESSION['usuario'] = $result['nome_usuario'];
-    header('location:principal.php');
+    $_SESSION['email'] = $result['email_usuario'];
+    header('location:../index.php');
 }
 else{
     unset ($_SESSION['usuario']);
-    header('location:index.html');
+    unset ($_SESSION['email']);
+    header('location:../logar.php');
      
 }
+
+
  
 ?>

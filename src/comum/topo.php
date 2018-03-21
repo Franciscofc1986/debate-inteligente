@@ -1,13 +1,16 @@
 <?php 
-    session_start();
-    $logado = false;
+
+require_once 'model/usuario.php';
+
+    $usuario = new Usuario();
+    $logado = $usuario->verificarSessao();
     $usuario_logado = "";
-    if(!isset ($_SESSION['usuario']) == true)
+    $email_usuario = "";
+
+    if($logado)
     {
-        unset($_SESSION['usuario']);
-    }else{
-        $logado = true;
         $usuario_logado = $_SESSION['usuario'];
+        $email_usuario = $_SESSION['email'];
     }
     
     echo '<!DOCTYPE html>
@@ -23,9 +26,8 @@
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </head>
-
         <body>
         <header>';
-    include_once 'barra_topo.php';
+    include_once 'comum/barra_topo.php';
     echo '</header>';
 ?>

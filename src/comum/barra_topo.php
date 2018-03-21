@@ -40,8 +40,12 @@ echo '</ul>
           <img src="img/background.png">
         </div>
         <a href="#!user"><img class="circle" src="img/default.jpg"></a>
-        <a href="#!name"><span class="bold black-text name">Francisco de Faria Cardoso</span></a>
-        <a href="#!email"><span class="black-text email">francisco_faria@inatel.br</span></a>
+        <a href="#!name"><span class="bold black-text name">'; 
+        echo $usuario_logado;
+        echo'</span></a>
+        <a href="#!email"><span class="black-text email">'; 
+        echo $email_usuario;
+        echo'</span></a>
       </div></li>
       <li><div class="divider"></div></li>
       <li><a class="subheader">Acesso rápido</a></li>
@@ -51,7 +55,7 @@ echo '</ul>
       <li><a href="#!"><i class="material-icons">person_add</i>Convidar amigo</a></li>
       <li><div class="divider"></div></li>
       <li><a class="subheader">Sair</a></li>
-      <li><a class="waves-effect" href="deslogar.php"><i class="material-icons">exit_to_app</i>Deslogar</a></li>
+      <li><a class="waves-effect" href="comum/deslogar.php"><i class="material-icons">exit_to_app</i>Deslogar</a></li>
      </ul>';
     }
     
@@ -59,7 +63,7 @@ echo '</ul>
 
     echo '<ul id="slide-out-2" class="side-nav">';                     
     if(!$logado) {
-      echo '<li><a href="index.html"><i class="material-icons">account_box</i>Logar</a></li>'; 
+      echo '<li><a href="login.php"><i class="material-icons">account_box</i>Logar</a></li>'; 
     }
       echo '<li><a href="#!"><i class="material-icons">dvr</i>Regras</a></li>
       <li><a href="falacias.php"><i class="material-icons">speaker_notes_off</i>Falácias</a></li>
