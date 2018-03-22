@@ -61,13 +61,14 @@ echo '</ul>
     
     
 
-    echo '<ul id="slide-out-2" class="side-nav">';                     
+    echo '<ul id="slide-out-2" class="side-nav">'; 
+    echo '<li><a href="index.php"><i class="material-icons">home</i>Página Inicial</a></li>';                     
     if(!$logado) {
       echo '<li><a href="login.php"><i class="material-icons">account_box</i>Logar</a></li>'; 
     }
-      echo '<li><a href="#!"><i class="material-icons">dvr</i>Regras</a></li>
+      echo '<li><a href="regras.php"><i class="material-icons">dvr</i>Regras</a></li>
       <li><a href="falacias.php"><i class="material-icons">speaker_notes_off</i>Falácias</a></li>
-      <li><a href="#!"><i class="material-icons">contact_mail</i>Contato</a></li>
-      <li><a href="#!"><i class="material-icons">info</i>Sobre o Site</a></li>
+      <li><a href="contato.php"><i class="material-icons">contact_mail</i>Contato</a></li>
+      <li><a href="sobre.php"><i class="material-icons">info</i>Sobre o Site</a></li>
     </ul>';
 ?>
