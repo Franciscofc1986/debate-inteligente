@@ -1,4 +1,10 @@
 <?php
+
+require_once 'model/alerta.php';
+
+    $alerta = new Alerta();
+    $temAlerta = $alerta->verificaSeTemAlerta();
+
 echo '<footer class="page-footer grey darken-3">
         <div class="container">
             <div class="row">
@@ -18,10 +24,23 @@ echo '<footer class="page-footer grey darken-3">
             </div>
         </div>
     </footer>
+    
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script> 
-  </body>
-</html>';
+    <script type="text/javascript" src="js/app.js"></script>';
+
+    if ($temAlerta) {
+        $alerta->receberAlerta();
+        echo '<script type="text/javascript">Materialize.toast(\'';
+        echo $alerta->getTextoAlerta();
+        echo '\', ';
+        echo $alerta->getTempoAlerta();
+        echo ', \'';
+        echo $alerta->getCorAlerta();
+        echo '\');</script>';
+    }
+    
+  echo '</body>
+    </html>';
 ?>

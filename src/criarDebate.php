@@ -7,7 +7,7 @@
     {
         $funcao = $_POST['tipo_funcao'];
         if($funcao == 'criarDebate'){
-            $criarDebateController->salvarDebate("oloco  bixo");
+            $criarDebateController->salvarDebate($_POST['titulo_debate'], $_POST['texto_debate'], $_FILES['imagem_debate']);
         }
     }else{
         $criarDebateController->index();

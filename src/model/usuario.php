@@ -6,6 +6,7 @@ class Usuario {
     private $email;
     private $tipo;
     private $foto;
+    private $dataCadastro;
 
     public function getId() {
         return $this->id;
@@ -55,8 +56,20 @@ class Usuario {
         $this->foto = $x;
     }
 
+    public function getDataCadastro() {
+        return $this->dataCadastro;
+    }
+    
+    public function setDataCadastro($x) {
+        $this->dataCadastro = $x;
+    }
+
     public function verificarSessao(){
-        session_start();
+        if(!isset($_SESSION))
+        { 
+            session_start(); 
+        }
+        
         if(!isset ($_SESSION['usuario']) == true)
         {
             return false;

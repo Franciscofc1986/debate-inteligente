@@ -2,6 +2,31 @@
     <section class="col s12 m6 l9">
         <h5 class="light">Debates</h5>
 
+        <?php
+            foreach( $listaDebates as $debate ) {
+
+                echo '<article class="col s12 l6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/debate/'.$debate->getFoto().'">';
+                echo '</div>
+                        <div class="card-content">
+                            <span class="card-title">';
+                echo $debate->getTitulo();
+                echo '      </span>
+                    <p>';
+                echo $debate->getDescricao();
+                echo '</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="debate.php?debate='.$debate->getId().'" class="btn waves-effect waves-light">Abrir </a>
+                            </div>
+
+                        </div>
+                    </article>';
+            }
+        ?>
+<!--        
         <article class="col s12 l6">
             <div class="card">
                 <div class="card-image">
@@ -91,7 +116,7 @@
                     <button class="btn waves-effect waves-light" type="submit" name="action">Abrir</button>
                 </div>
             </div>
-        </article>
+        </article>-->
 
     </section>
 

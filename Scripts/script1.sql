@@ -16,6 +16,7 @@ CREATE TABLE debate(
     titulo_debate VARCHAR(100),
     descricao_debate VARCHAR(4000),
     autor_id_debate INT UNSIGNED,
+	foto_debate VARCHAR(50),
     data_cadastro_debate TIMESTAMP DEFAULT now()
 );
 
