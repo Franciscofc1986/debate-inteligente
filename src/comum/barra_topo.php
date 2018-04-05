@@ -49,8 +49,8 @@ echo '</ul>
       </div></li>
       <li><div class="divider"></div></li>
       <li><a class="subheader">Acesso rápido</a></li>
-      <li><a href="principal.php"><i class="material-icons">home</i>Minha pagina inicial</a></li>
-      <li><a href="#!"><i class="material-icons">playlist_add</i>Criar um debate</a></li>
+      <li><a href="index.php"><i class="material-icons">home</i>Minha pagina inicial</a></li>
+      <li><a href="criarDebate.php"><i class="material-icons">playlist_add</i>Criar um debate</a></li>
       <li><a href="#!"><i class="material-icons">notifications</i>Notificações</a></li>
       <li><a href="#!"><i class="material-icons">person_add</i>Convidar amigo</a></li>
       <li><div class="divider"></div></li>
@@ -68,6 +68,8 @@ echo '</ul>
     }
       echo '<li><a href="regras.php"><i class="material-icons">dvr</i>Regras</a></li>
       <li><a href="falacias.php"><i class="material-icons">speaker_notes_off</i>Falácias</a></li>
+      <li><a href="filosofia.php"><i class="material-icons">account_balance</i>Filosofia</a></li>
+      <li><a href="temLogica.php"><i class="material-icons">help_outline</i>Tem Lógica isso?</a></li>
       <li><a href="contato.php"><i class="material-icons">contact_mail</i>Contato</a></li>
       <li><a href="sobre.php"><i class="material-icons">info</i>Sobre o Site</a></li>
     </ul>';

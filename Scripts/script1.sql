@@ -35,38 +35,46 @@ CREATE TABLE debate_debate(
     FOREIGN KEY (debate_id_segundo) REFERENCES debate(debate_id) ON DELETE CASCADE
 );
 
-CREATE TABLE resposta(
-    resposta_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    texto_resposta VARCHAR(4000),
-    ordem_resposta SMALLINT UNSIGNED,
-    autor_id_resposta INT UNSIGNED,
-    debate_id_resposta INT UNSIGNED,
-    data_cadastro_resposta TIMESTAMP DEFAULT now(),
-    cor_resposta TINYINT UNSIGNED,
-    status_resposta TINYINT(1) DEFAULT 1,
-    FOREIGN KEY (debate_id_resposta) REFERENCES debate(debate_id) ON DELETE CASCADE
+CREATE TABLE ideia(
+    ideia_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    texto_ideia VARCHAR(4000),
+    ordem_ideia SMALLINT UNSIGNED,
+    autor_id_ideia INT UNSIGNED,
+    debate_id_ideia INT UNSIGNED,
+    data_cadastro_ideia TIMESTAMP DEFAULT now(),
+    cor_ideia TINYINT UNSIGNED,
+    status_ideia TINYINT(1) DEFAULT 1,
+    FOREIGN KEY (debate_id_ideia) REFERENCES debate(debate_id) ON DELETE CASCADE
 );
 
 CREATE TABLE argumento(
     argumento_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    titulo_argumento VARCHAR(100),
-    descricao_argumento VARCHAR(4000),
+    texto_argumento VARCHAR(4000),
     status_argumento TINYINT(1) DEFAULT 1,
     data_cadastro_argumento TIMESTAMP DEFAULT now(),
-    resposta_id_argumento INT UNSIGNED,
+    ideia_id_argumento INT UNSIGNED,
     cor_argumento TINYINT UNSIGNED,
-    FOREIGN KEY (resposta_id_argumento) REFERENCES resposta(resposta_id) ON DELETE CASCADE
+    FOREIGN KEY (ideia_id_argumento) REFERENCES ideia(ideia_id) ON DELETE CASCADE
 );
 
 CREATE TABLE premissa(
     premissa_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    titulo_premissa VARCHAR(100),
-    descricao_premissa VARCHAR(4000),
+    texto_premissa VARCHAR(4000),
     status_premissa TINYINT(1) DEFAULT 1,
     data_cadastro_premissa TIMESTAMP DEFAULT now(),
     argumento_id_premissa INT UNSIGNED,
     cor_premissa TINYINT UNSIGNED,
     FOREIGN KEY (argumento_id_premissa) REFERENCES argumento(argumento_id) ON DELETE CASCADE
+);
+
+CREATE TABLE conclusao(
+    conclusao_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    titulo_conclusao VARCHAR(4000),
+    status_conclusao TINYINT(1) DEFAULT 1,
+    data_cadastro_conclusao TIMESTAMP DEFAULT now(),
+    argumento_id_conclusao INT UNSIGNED,
+    cor_conclusao TINYINT UNSIGNED,
+    FOREIGN KEY (argumento_id_conclusao) REFERENCES argumento(argumento_id) ON DELETE CASCADE
 );
 
 CREATE TABLE tipo_erro(
@@ -91,12 +99,12 @@ CREATE TABLE exemplo_erro(
     FOREIGN KEY (erro_id) REFERENCES erro(erro_id) ON DELETE CASCADE
 );
 
-CREATE TABLE resposta_erro(
-    resposta_erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    resposta_id INT UNSIGNED,
+CREATE TABLE ideia_erro(
+    ideia_erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    ideia_id INT UNSIGNED,
     erro_id INT UNSIGNED,
     cont_avaliacoes_erro_reposta TINYINT UNSIGNED,
-    FOREIGN KEY (resposta_id) REFERENCES resposta(resposta_id) ON DELETE CASCADE,
+    FOREIGN KEY (ideia_id) REFERENCES ideia(ideia_id) ON DELETE CASCADE,
     FOREIGN KEY (erro_id) REFERENCES erro(erro_id) ON DELETE CASCADE
 );
 
@@ -118,14 +126,23 @@ CREATE TABLE premissa_erro(
     FOREIGN KEY (erro_id) REFERENCES erro(erro_id) ON DELETE CASCADE
 );
 
-CREATE TABLE usuario_resposta_erro(
-    usuario_resposta_erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    resposta_erro_id INT UNSIGNED,
+CREATE TABLE conclusao_erro(
+    conclusao_erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    conclusao_id INT UNSIGNED,
+    erro_id INT UNSIGNED,
+    cont_avaliacoes_erro_conclusao TINYINT UNSIGNED,
+    FOREIGN KEY (conclusao_id) REFERENCES conclusao(conclusao_id) ON DELETE CASCADE,
+    FOREIGN KEY (erro_id) REFERENCES erro(erro_id) ON DELETE CASCADE
+);
+
+CREATE TABLE usuario_ideia_erro(
+    usuario_ideia_erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    ideia_erro_id INT UNSIGNED,
     usuario_sinalizador_id INT UNSIGNED,
     comentario_sinalizador VARCHAR(4000),
     ordem_comentario SMALLINT UNSIGNED,
-    data_cadastro_resposta_sinalizador TIMESTAMP DEFAULT now(),
-    FOREIGN KEY (resposta_erro_id) REFERENCES resposta_erro(resposta_erro_id) ON DELETE CASCADE
+    data_cadastro_ideia_sinalizador TIMESTAMP DEFAULT now(),
+    FOREIGN KEY (ideia_erro_id) REFERENCES ideia_erro(ideia_erro_id) ON DELETE CASCADE
 );
 
 CREATE TABLE usuario_argumento_erro(
@@ -146,4 +163,14 @@ CREATE TABLE usuario_premissa_erro(
     ordem_comentario SMALLINT UNSIGNED,
     data_cadastro_premissa_sinalizador TIMESTAMP DEFAULT now(),
     FOREIGN KEY (premissa_erro_id) REFERENCES premissa_erro(premissa_erro_id) ON DELETE CASCADE
+);
+
+CREATE TABLE usuario_conclusao_erro(
+    usuario_conclusao_erro_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    conclusao_erro_id INT UNSIGNED,
+    usuario_sinalizador_id INT UNSIGNED,
+    comentario_sinalizador VARCHAR(4000),
+    ordem_comentario SMALLINT UNSIGNED,
+    data_cadastro_conclusao_sinalizador TIMESTAMP DEFAULT now(),
+    FOREIGN KEY (conclusao_erro_id) REFERENCES conclusao_erro(conclusao_erro_id) ON DELETE CASCADE
 );
