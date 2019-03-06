@@ -10,7 +10,7 @@ class PrincipalController {
         $debateService = new DebateService();
 
         $listaDebates = $debateService->receberTodosDebates();
-        ChromePhp::log($listaDebates[2]);
+        //ChromePhp::log($listaDebates[2]);
         $paginaPrincipal = new PrincipalView();
         $paginaPrincipal->exibir($listaDebates);
     }

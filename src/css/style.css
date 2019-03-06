@@ -47,3 +47,8 @@ h1 {
 .collapsible-body{
     padding: 0.5rem;
 }
+
+.foto_mensagem{
+    width: 70px;
+    height: 70px;
+}

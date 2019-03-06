@@ -39,7 +39,9 @@ echo '</ul>
         <div class="background">
           <img src="img/background.png">
         </div>
-        <a href="#!user"><img class="circle" src="img/default.jpg"></a>
+        <a href="#!user"><img class="circle responsive-img" src="';
+        echo $filename_foto;
+        echo '"></a>
         <a href="#!name"><span class="bold black-text name">'; 
         echo $usuario_logado;
         echo'</span></a>

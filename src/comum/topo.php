@@ -1,5 +1,4 @@
 <?php 
-
 require_once 'model/usuario.php';
 
     $usuario = new Usuario();
@@ -11,6 +10,12 @@ require_once 'model/usuario.php';
     {
         $usuario_logado = $_SESSION['usuario'];
         $email_usuario = $_SESSION['email'];
+
+        $filename_foto = 'img/usuario/'.$_SESSION['foto'];
+
+        if (!file_exists($filename_foto)) {
+            $filename_foto = "img/default.jpg";
+        }
     }
     
     echo '<!DOCTYPE html>

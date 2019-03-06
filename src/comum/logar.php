@@ -18,12 +18,14 @@ if($result)
     $_SESSION['usuario'] = $result['nome_usuario'];
     $_SESSION['email'] = $result['email_usuario'];
     $_SESSION['usuario_id'] = $result['usuario_id'];
+    $_SESSION['foto'] = $result['foto_usuario'];
     header('location:../index.php');
 }
 else{
     unset ($_SESSION['usuario']);
     unset ($_SESSION['email']);
     unset ($_SESSION['usuario_id']);
+    unset ($_SESSION['foto']);
     header('location:../logar.php');
      
 }

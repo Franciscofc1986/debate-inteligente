@@ -1,0 +1,16 @@
+.container-login  {
+    margin: 0 auto;
+}
+
+.foto_barra_superior{
+    margin-top: 4px;
+    max-width: 70px;
+
+    width: auto;
+    height: auto;
+}
+
+.texto_vetado{
+    text-decoration: line-through;
+}
+
