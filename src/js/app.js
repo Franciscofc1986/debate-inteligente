@@ -18,5 +18,29 @@ $('.menu-2').sideNav({
 });
 
 
+$(document).ready(function(){
+
+    $('#myLink').click(function(){ 
+        $('.fixed-action-btn.toolbar').openToolbar(); //abrir caixa de edição
+        return false; // não expande o item(argumento, ideia, premissa)
+     });
+
+    $('.myLink').click(function(){ 
+        $('.fixed-action-btn.toolbar').openToolbar(); //abrir caixa de edição
+    
+        $("#elementoID").val(event.target.id);
+        var bla = $("#elementoID").val();
+        return false; // não expande o item(argumento, ideia, premissa)
+    });
+
+    $('.modal').modal();
+
+    $('.tooltipped').tooltip();
+
+    $('#textarea1').val('Abrir caixa de edição. Abrir caixa de edição. Abrir caixa de edição. Abrir caixa de edição.');
+
+    $('select').formSelect();
+});
+
 
 

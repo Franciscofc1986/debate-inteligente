@@ -1,4 +1,4 @@
-<div class="fixed-action-btn toolbar">
+<!-- <div class="fixed-action-btn toolbar">
     <a class="btn-floating btn-large grey darken-3">
         <i class="large material-icons">mode_edit</i>
     </a>
@@ -10,10 +10,91 @@
         <li class=""><a href="#!"><i class="material-icons">send</i></a></li>
         <li class=""></li>
     </ul>
+</div> -->
+
+<input type="hidden" id="elementoID" name="elementoID" value="456">
+
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+<!-- Modal Editar -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Editar</h4>
+        <p>  
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Argumento: </label>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salvar</a>
+    </div>
 </div>
 
-<div class="row container">
+<!-- Modal Criar -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <h4>Criar Argumento</h4>
+        <p>  
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Novo argumento: </label>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salvar</a>
+    </div>
+</div>
 
+<!-- Modal Falacias -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <h4>Falácias</h4>
+        <div class="input-field col s12">
+            <select multiple>
+                <option value="" disabled selected>Falácia</option>
+                <option value="1">Ad-homnem</option>
+                <option value="2">Espantalho</option>
+                <option value="3">Autoridade</option>
+            </select>
+            <label>Materialize Multiple Select</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Marcar como Falácia</a>
+    </div>
+</div>
+
+<div class="fixed-action-btn toolbar">
+        <a class="btn-flat btn-large white-text">
+            <!-- <i class="large material-icons">menu</i> -->
+        </a>
+        <ul class="black red-text">
+            <li class="waves-effect waves-light"><a class="tooltipped modal-trigger" href="#modal1" data-position="top" data-tooltip="Editar"><i class="material-icons">edit</i></a></li>
+            <li class="waves-effect waves-light"><a class="tooltipped modal-trigger" href="#modal2" data-position="top" data-tooltip="Criar mais"><i class="material-icons">playlist_add</i></a></li>
+            <li class="waves-effect waves-light"><a class="tooltipped modal-trigger" href="#modal3" data-position="top" data-tooltip="Falácia"><i class="material-icons">error</i></a></li>
+        </ul>
+    </div>
+
+
+
+<div class="row container">
     <div class="col s12 m10 offset-m1 l10 offset-l1">
         <div class="card-panel grey lighten-5 center">
             <div class="row ">
@@ -23,7 +104,6 @@
                         <img src="img/terra-plana.jpg">
                     </div>
                     <div class="card-content">
-
                         <p>A terra é realmente plana? Caso contrário, porque o homem não voltou a pisar na lua?</p>
                     </div>
                 </div>
@@ -49,34 +129,35 @@
                             </div>
 
                         </div>
-                        <div class="col s9">
+                        <div class="col s8">
                             <span class="black-text">
                                 Claro que a terra é plana. Se não fosse isso como não vemos a curvatura da terra? Claro
                                 que a terra é plana. Se não fosse isso como não vemos a curvatura da terra?
                             </span>
+
                         </div>
-                        <div class="col s1">
-                            <i class="large material-icons">format_list_bulleted</i>
+                        <div class="col s2 right ">
+                            <a class="btn-small black-text right" id="myLink"><i class="material-icons">menu</i></a>
+                            <br /><br />
+                            <a class="btn-small black-text right"><i class="material-icons">arrow_drop_down</i></a>
                         </div>
                     </div>
                 </div>
-                <div class="collapsible-body">
-                    <span><b>&nbsp;Argumentos</b></span>
+                <div class="collapsible-body blue-grey darken-3 white-text ">
+                    <div class="center-align"><span><b>&nbsp;ARGUMENTOS</b></span></div>
                     <ul class="collapsible expandable" data-collapsible="accordion">
                         <li>
-                            <span class="new badge grey" data-badge-caption="">1</span>
                             <div class="progress red lighten-5" style=" margin-left: 2%; width: 95%;">
                                 <div class="determinate red" style="width: 70%"></div>
                             </div>
-                            <div class="collapsible-header ">
-
-                                <i class="material-icons red-text">check_circle</i>
-                                <p class="texto_vetado red-text">Olhando para o horizonte vejo uma reta ao contrário de
-                                    um arco. Olhando para o horizonte
-                                    vejo uma reta ao contrário de um arco. Olhando para o horizonte vejo uma reta ao
-                                    contrário
-                                    de um arco.</p>
-                                <i class="right material-icons">add_box</i>
+                            <div class="collapsible-header blue-grey darken-3 white-text">
+                                <!-- <img class="h40" src="img/letra_a.png"> -->
+                                <p class="texto_vetado espaco_texto">Olhando para o horizonte vejo uma reta ao contrário de
+                                        um arco. Olhando para o horizonte
+                                        vejo uma reta ao contrário de um arco. Olhando para o horizonte vejo uma reta ao
+                                        contrário
+                                        de um arco.
+                                </p>
                             </div>
                             <div class="collapsible-body">
                                 <p>Ao olhar para o horizonte eu vejo uma reta ao inves de um circuloAo olhar para o
@@ -95,57 +176,75 @@
 
                         </li>
                         <li>
-                            <div class="collapsible-header texto_vetado red-text">
-                                <i class="material-icons">check_circle</i> As fotos da Nasa mostram a terra plana
+                            <div class="progress red lighten-5" style=" margin-left: 2%; width: 95%;">
+                                <div class="determinate red" style="width: 70%"></div>
                             </div>
-                            <div class="collapsible-body deep-orange lighten-3">
-                                <span><b>&nbsp;Premissas</b></span>
+                            <div class="collapsible-header blue-grey darken-3 white-text">
+                                <!-- <img class="h40" src="img/letra_a.png"> -->
+
+                                <p class="texto_vetado espaco_texto">Olhando para o horizonte vejo uma reta ao contrário
+                                    horizonte
+                                    eu vejo uma reta ao inves de um circuloAo olhar para o horizonte eu vejo uma reta ao </p>
+                            </div>
+                            <div class="collapsible-body">
+                                <p>Ao olhar para o horizonte eu vejo uma reta ao inves de um circuloAo olhar para o
+                                    horizonte
+                                    eu vejo uma reta ao inves de um circuloAo olhar para o horizonte eu vejo uma reta ao
+                                    inves de um circuloAo olhar para o horizonte eu vejo uma reta ao inves de um
+                                    circuloAo
+                                    olhar para o horizonte eu vejo uma reta ao inves de um circulo</p>
+                                <p>
+                                    <div class="right">
+                                        <a class="btn-floating red lighten-3">
+                                            <i class="material-icons">announcement</i></a>
+                                    </div>
+                                </p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="progress red lighten-5" style=" margin-left: 2%; width: 95%;">
+                                <div class="determinate red" style="width: 0%"></div>
+                            </div>
+                            <div class="collapsible-header blue-grey darken-3 white-text">
+                                <!-- <img class="h40" src="img/letra_a.png"> -->
+                                <p class="texto_vetado espaco_texto">As fotos da Nasa provam que...
+                                </p>
+                            </div>
+                            <div class="collapsible-body grey white-text">
+                                    <div class="center-align"><span><b>&nbsp;PREMISSAS</b></span></div>
                                 <ul class="collapsible expandable" data-collapsible="accordion">
-                                    <li class="deep-orange lighten-5">
-                                        <span class="new badge grey" data-badge-caption="">1</span>
+                                    <li class="white">
                                         <div class="progress red lighten-5" style=" margin-left: 2%; width: 95%;">
                                             <div class="determinate red" style="width: 70%"></div>
                                         </div>
-                                        <div class="collapsible-header collapsible-header">
+                                        <div class="collapsible-header blue-grey-text">
 
-                                            <i class="material-icons black-text ">check_circle</i>
-                                            <p class="black-text">Olhando para o horizonte vejo uma reta ao contrário de
+                                            <p class="blue-grey-text">Olhando para o horizonte vejo uma reta ao contrário de
                                                 um arco. Olhando para
                                                 o horizonte vejo uma reta ao contrário de um arco. Olhando para o
                                                 horizonte
                                                 vejo uma reta ao contrário de um arco.</p>
 
                                         </div>
-                                        <div class="collapsible-body">
-                                            <p>Ao olhar para o horizonte eu vejo uma reta ao inves de um circuloAo olhar
-                                                para
-                                                o horizonte eu vejo uma reta ao inves de um circuloAo olhar para o
-                                                horizonte
-                                                eu vejo uma reta ao inves de um circuloAo olhar para o horizonte eu vejo
-                                                uma reta ao inves de um circuloAo olhar para o horizonte eu vejo uma
-                                                reta
-                                                ao inves de um circulo</p>
-                                            <p>
-                                                <div class="right">
-                                                    <a class="btn-floating red lighten-3">
-                                                        <i class="material-icons">announcement</i></a>
-                                                </div>
-                                            </p>
-                                        </div>
+
 
                                     </li>
-                                    <li>
-                                        <div class="collapsible-header texto_vetado red-text">
-                                            <i class="material-icons">check_circle</i> As fotos da Nasa mostram a terra
+                                    <li class="white">
+                                        <div class="progress red lighten-5" style=" margin-left: 2%; width: 95%;">
+                                            <div class="determinate red" style="width: 70%"></div>
+                                        </div>
+                                        <div class="collapsible-header blue-grey-text">
+                                            As fotos da Nasa mostram a terra
                                             plana
                                         </div>
-                                        <div class="collapsible-body">
+                                        <div class="collapsible-body blue-grey-text">
                                             <p>Nas missões apolo 11 e 12, as fotos divulgadas pela Nasa mostram o
                                                 planeta com
                                                 uma superficie plana.</p>
                                             <p>
                                                 <div class="right">
-                                                    <a class="btn-floating red lighten-3">
+                                                    <a class="btn-floating">
                                                         <i class="material-icons">announcement</i></a>
                                                 </div>
                                             </p>
@@ -169,14 +268,17 @@
                             </div>
 
                         </div>
-                        <div class="col s9">
+                        <div class="col s8">
                             <span class="black-text">
                                 Claro que a terra é plana. Se não fosse isso como não vemos a curvatura da terra? Claro
                                 que a terra é plana. Se não fosse isso como não vemos a curvatura da terra?
                             </span>
+
                         </div>
-                        <div class="col s1">
-                            <i class="large material-icons">format_list_bulleted</i>
+                        <div class="col s2 right ">
+                            <a class="btn-small black-text right myLink" ><i class="material-icons" id="teste456">menu</i></a>
+                            <br /><br />
+                            <a class="btn-small black-text right"><i class="material-icons">arrow_drop_down</i></a>
                         </div>
                     </div>
                 </div>
@@ -354,7 +456,6 @@
                                                 o horizonte vejo uma reta ao contrário de um arco. Olhando para o
                                                 horizonte
                                                 vejo uma reta ao contrário de um arco.</p>
-
                                         </div>
                                         <div class="collapsible-body">
                                             <p>Ao olhar para o horizonte eu vejo uma reta ao inves de um circuloAo olhar
