@@ -1,0 +1,108 @@
+Fonte ;Categoria da Falacia;Nome da Falacia;Nome em Latim;Descricao;Exemplo 1;Exemplo 2;Exemplo 3;Argumentação valida;;;;;
+1;Formais;Afirmando o Consequente;;Esta falácia tem a aparência de uma inferência logicamente válida, mas na verdade é inválida. Ela é uma das falácias formais.;Se vcê cair da piscina, ficará todo molhado. Você está todo molhado, logo caiu na piscina.;;;;Fonte1: ;http://falaciasonline.wikidot.com/tipos-de-falacias;;;
+1;Formais;Negando o Antecedente;;Esta é outra das falácias que tem origem em má interpretação de princípios lógicos simples.;""" Se o preço das ações subir, você ficará rico. O preço das ações não subiu, portanto você não ficou rico.""
+Posso ter recebido uma herança, ganhado na loteria, achado uma malha cheia de dinheiro, etc.";;;;Fonte2: ;http://ateus.net/artigos/ceticismo/guia-de-falacias-logicas-do-stephen;;;
+1;Informais;Apelo à Pena;Ad Misericordiam;A aceitação do argumento é justificado pelo uso de termos que procuram conquistar a simpatia ou a ligação emocional das pessoas com o objeto da conclusão, mesmo desconsiderando as evidências do contrário.;"Advogado: "" A promotoria acaba de demonstrar que o réu matou seu pai e sua mãe.""
+Réu: ""Como podem vocês me condenar? Não veem que agora eu sou um pobre orfão?""";;;;Fonte3: ;https://www.logicallyfallacious.com/logicalfallacies/search;;;
+1;Informais;Apelo à Ignorância;Ad Ignorantum;"Este é um argumento falacioso que conclui que algo é 
+verdadeiro só porque não pode ser provado como falso, ou vice-versa.";"""Como não provaram que fantasmas não existem, então eles devem existir.""";"""Existe vida em outro planeta, pois nunca provaram o contrário.""";;"Ele é válido quando quem está propondo o argumento não consegue provar sua veracidade, ou quando o argumentador consegue provar.
+Ex.:
+""Como a promotoria não conseguiu provar que o réu é culpado, declaramos que ele é inocente.""";Fonte4: ;https://en.wikipedia.org/wiki/List_of_fallacies;;;
+1;Informais;Apelo à Autoridade;Ad Verecundiam;Ocorre quando procuramos suportar o argumento na declaração de uma autoridade que faz comentário fora de sua área de especialidade.;"""Albert Einstein falou que a cada maço de cigarros que alguém fuma, terá sua vida reduzida em 5 dias.""
+
+Nesse caso, Albert Einstein podia ser considerado uma autoridade se estivesse falando sobre física ou algo sobre suas teorias de relatividade. Mas não podia falar nada como um médico na situação apresentada acima.
+O apelo à autoridade é uma tentativa de extender a especialidade ou notoriedade de alguém além de sua reconhecida área de competência.";;;;;;;;
+1;Informais;"Apelo à Força (ou ""Apelo à Ameaça"")";;Este caso ocorre quando a tentativa de persuadir alguém é feito não através da força da argumentação, mas sim pelo uso de ameaças. É claro que nestes casos pouco importa a qualidade das premissas, já que a força é o que se está propondo indevidamente como justificativa da conclusão.;"Filho falando à mãe:
+""Mãe, porque tenho que tomar banho todos os dias?""
+""Porque sim, não discuta, sou sua mãe e se você não me obedecer, ficará de castigo.""
+
+O apelo à força na relação pais/filhos é muito comum. Acontece principalmente quando os pais não dispõem mais de ""energias"" para poder argumentar com os filhos. Basta saber que, embora conveniente em certos casos, essa construção que apela para castigos e punições não é uma forma correta de argumentação.";;;;;;;;
+1;Informais;Apelo ao Público;;Justifica-se o argumento falaciosos por causa de sua popularidade, ou seja, a maioria concorda com o que se está alegando.;"“Todos estão votando em Ricardo para ser o líder do projeto, por isso você deve votar nele também.”
+A única coisa que se deve dizer com relação ao Ricardo é que ele é muito popular. Porém isso não significa que ele deve ser aceito independente de outras razões sólidas.";"Antes de Galileu:
+“Todos sabemos que os objetos mais pesados caem mais rapidamente do que objetos mais leves.”
+
+O que era “verdade” para todo mundo antes de Galileu é justificada nessa frase com idéia dessa que não poderia ser diferente, pois todos acham assim é hoje uma interpretação errônea.";;;;;;;
+1;Informais;Ataque ao argumentador;Argumentum Ad Hominem;"Essa falácia consiste em referir-se ao oponente de forma pessoal e abusiva por meio de insultos e atques verbais. Usamos o ""ad hominem"" como arma para desacreditar ou reduzir a força da argumentação de nosso adversário.
+
+O uso dessa falácia é uma das táticas mais comuns, usada até em discussões educadas e formais.
+Quando atacamos uma pessoa fica mais fácil encontrar argumentos para provar o que queremos falar e assim, desacreditarmos as ações de nossos adversários. Porém, para atacar idéias é necessário achar bons argumentos e evidências que provem a falta de credibilidade dessa idéia. Isso nem sempre é facil de se fazer.
+Outro fator que, infelizmente favorece o uso de ""ad hominem"" é o prazer emocional obtido pelo atacante, já que, em geral, a pessoa atacada se irrita. Não é raro que esta irritação faça a pessoa perder o rumo da discussão, partindo também para ataques pessoais. Nesta situação vence aquele que dispõe de uma maior capacidade de maltratar verbalmente o outro.";"""Todos sabemos que o nobre deputado é um mentiroso e trapaceiro costumaz, portanto como podemos concordar com sua idéia de redução de impostos?""
+
+Nesse caso o ""ad hominem"" é usado para atacar um deputado. Seu adversário afirma que o deputado é um mentiroso e trapaceiro, logo suas ações são desacreditadas.";"""Ateísmo é uma filosofia malévola, praticada por comunistas e assassinos."""; Se foi um burguês quem disse isso, certamente é um engodo.;"""Ad Hominem válido: ao Testemunho""
+Há uma maneira de usarmos a estrutura ""ad hominem"" de forma válida: quando ela faz parte não de um ataque ao argumentador, mas sim de um ataque ao testemunho.
+Alguém pode desacreditar o testemunho de uma pessoa ao mencionarmos que ela é sabidamente mentirosa ou psicótica.
+
+""O senhor está bêbado, como posso acreditar que presenciou este distinto cavalheiro roubando aquela senhora?""
+
+O argumento pode ser desacreditado, uma vez que o testemunho de um bêbado não é confiável, portanto, não teríamos como ter certeza de que ele viu o cavalheiro roubando a senhora.";;;;;
+1;Informais;Clamando pela Questão;Petitio Principii;"Ocorre quando as premissas são tão questionáveis quanto a conclusão alcançada.
+Usamos a conclusão que estamos tentando estabelecer, como componente ou suporte de uma das premissas. Ou seja, se reescreve a conclusão e a usa como premissa.";"""Sócrates tentou corromper a juventude da Grécia, logo foi justo condená-lo à morte""";"""Eu não sou um marginal, porque não fiz nada de criminoso.""";"""A mulher que teve a infelicidade de se casar com um corno, só pode se consolar dormindo com todo mundo."" (Sacha Guitry)";"Uma forma de se combater este tipo de falácia é reescrever o argumento em sua forma padrão que demonstre bem a sua circularidade:
+Em outras palavras, você está dizendo que se X é verdadeiro, então é porque X é verdadeiro
+
+Uma outra situação comum, embora nem sempre constituindo um argumento, ocorre quando alguém tenta explicar um evento por sua definição.";;;;;
+1;Informais;Você Também;Tu Quoque;Essa falácia se estabelece quando se usa os erros cometidos por outros - principalmente pelo próprio oponente na discussão - para desconsiderar o argumento apresentado.;"""Como é que você me pede para ser vegetariano, se você adora usar cintos e sapatos de couro?""";"""Não aceito sua acusação de que estamos escrevendo com erros de Português, pois você também erra muito.""";"Ocorre, também, quando uma ação se torna aceitável porque outra pessoa também a cometeu.
+""Como posso aceitar o argumento de que fumar faz mal à saúde, se é dito por um médico que fuma tanto quanto eu?""";;;;;;
+1;Informais;Apelo à Tradição;Ad Antiquitatem;"Argumento em que se justifica sua aceitação baseado no fato de que ""sempre foi feito assim.""";"""Se meu avô diz que Garrincha foi melhor que Pelé, deve ser verdade.""";"""Nesta empresa nunca foi permitido que mulheres ascendessem à posição de diretoria; sempre foi assim, e não é por termos agora acionistas feministas que isto precisa mudar.""";"O apelo à tradição baseia-se na noção de que tudo o que funcionou no passado irá funcionar no futuro:
+""Todas as grandes civilizações na História da Humanidade sempre providenciaram subsídios do Estadopara fermento da Arte e da Cultura. Por isso, temos que fazer o mesmo.""";;;;;;
+1;Informais;Espantalho;;A falácia do espantalho é uma tentativa de reconstrução do argumento oponente de forma diferente, mais fraca e não representativa da intenção original do argumentador. Em outras palavras transforma-se o argumento original em um” espantalho”.;"João: “Eu acho que o capitalismo é bom porque ele incentiva as pessoas a trabalhar e poupar”.
+José:”Você acha que o capitalismo é bom porque diz que a riqueza vem a mão de quem trabalha, mas isso é claramente falso, já que muitas ricas simplesmente herdam suas fortunas sem nuca trabalhar, por isso capitalismo é um fracasso.”
+
+José acabou de reconstruir um espantalho, pois transformou o argumento de João na idéia de que herdeiros conseguem riquezas sem trabalhar e isso seria, na sua visão, um demérito do sistema capitalista capaz de aniquilar todo as outras vantagens. Mas José nada disse sobre o que João realmente argumentos, a idéia de que o capitalismo incentiva o trabalho e a poupança.";;;;;;;;
+1;Informais;Falácia de Deversão (ou Red Herring);;"O Red Herring(arenque vermelho) é a introdução de material irrelevante ao ponto em discussão, em geral com o objetivo de desviar o argumento para outra conclusão, muitas vezes mais fácil de ser atacada. Note que isto é relativamente diferente do que ocorre com o Espantalho, onde o argumento é deformado para depois ser atacado.
+
+Esta falácia também é conhecida por Ignoratio Elenchi (ignorância da refutação), embora este termo possa ser usado para englobar a maioria das falácias informais. Em todos esses casos, está-se usando de um recurso inconveniente para desviar a atenção do suporte correto que a conclusão deveria ter.";"""Não acho que homens e mulheres devam ganhar o mesmo salário por funções iguais. Sou contra a igualdade entre os sexos. Em um shopping center, imagine o que aconteceria se os banheiros fossem unissex: tanto homens quanto mulheres ficariam desconfortáveis. Você não acha que tenho razão?""";;;;;;;;
+1;Informais;Falácia da Falácia;Ad Logicam;Esta falácia propõe que uma conclusão é falsa só porque foi anteriormente apresentada como resultado de um argumento falaciosos. Se o argumento for falacioso ainda não podemos deduzir que a sua conclusão é falsa: ela pode ser suportada por um outro argumento, mais bem sucedido.;"Pedro: “Simplificando a fração 16/64 desta forma: Corto o seis do numerador com o seis do denominador e fico com 1/4.”
+Mario: “Epa! Está errado! Você não pode cortar o seis em cima e em baixo.”
+Pedro; “ O que? Você esta querendo me dizer que 16/64 não é igual a 1/4?”
+A falácia Ad Logicam esta sendo cometida por Pedro em sua ultima intervenção, pois embora sua simplificação esteja incorreta, o resultado final por ele obtido está - por coincidência - correto.";;;;;;;;
+1;Informais;Não Há Explicação;No Sequitur;"Esse tipo de falácia é um dos casos mais engraçados, pois representa em geral argumentos que tem no mínimo uma desculpa esfarrapada.
+No Sequitur ocorre quando não há conexão lógica entre premissa e conclusões, todos os argumentos precisam que as premissas levem-nos a crer na veracidade da conclusão. Os argumentos que cometem o No Sequitur falham nesse sentido. Pode até ser que a conclusão seja verdadeira, mas não foi por causa das premissa utilizadas.
+É bom frisar ainda que No Sequitur é também uma das falácias mais preferidas por políticos ( talvez só perdendo para Ed Hominems)";“Nosso país irá prosperar, porque Deus é brasileiro”;"“protegendo os macacos, estaremos protegendo nos mesmos, porque eles são os animais mais próximos do homem.”
+Brigitte Bardot, durante ECO-92 (Stycer 1996)
+
+Para ser um pouco irônico há como argumentar que, se isso for verdade, devemos iniciar prontamente a proteção aos ácaros, pois eles são animais próximos ainda do homem, temos que defender os outros animais, mas não com argumentos como esse.";;;;;;;
+1;Informais;Apelo à Natureza;;Nesta falácia, alega-se que um argumento é obviamente verdadeiro porque se refere a uma “ Lei da natureza”. Ocorre também quando se considera um comportamento justificável porque ele faz, supostamente, parte da natureza do ser humano.;"“É claro que a homossexualidade é um comportamento errado. Qual foi a ultima vez que você viu na natureza dois animais do mesmo sexo tendo relações?”
+
+Este argumento não é só problemático em relação ao Apelo a Natureza, é também fatalmente errado, pois há diversos cosas de homossexualismo em primatas documentados por etologistas.";;;;;;;;
+1;Informais;Questão Complexa;;A principal idéia desta falácia é colocar uma questão que não importa que respostas tenha, compromete o opositor. Quem for tentar responder a qualquer uma destas perguntas, estará em apuros.;“Quando foi que você parou de tomar drogas?”;“Onde foi que você escondeu o dinheiro que roubou?”;;;;;;;
+1;Informais;Descida Escorregadia;;Nesta falácia assume-se uma pequena movimentação para uma direção particular irá desencadear um processo irreversível e incontrolável de movimentação na mesma direção.;"""Sou contra a eutanásia, porque após aprovarmos essa prática nada nos deterá na trajetória para o assassinato e até mesmo o negócio generalizado.""";;;;;;;;
+1;Informais;Antes Disso Então Por Causa Disso;Post Hoc Ergo Propter Hoc;Por proceder um evento, este outro deve ser necessariamente a sua causa.;A noite seguiu-se o dia, mas não podemos dizer que a noite provoca o dia.;;;;;;;;
+1;Informais;Analogia Imprópria;;As analogias são muito úteis durante explanações difíceis de serem entendidos, podemos explicar o fluxo de eletricidade num fio de cobre tomando como base uma analogia do fluxo de água em um cano.;;;;;;;;;
+1;Informais;Explicativa;;Uma analogia bem concebida pode ser útil durante um momento em que se tenta expor algo complexo.;O poder é como violino: Toma-se com a esquerda e toca-se com a direita.;;;;;;;;
+1;Informais;Antítese;;Pode-se usar uma analogia para se referir a antítese do que parece ser a intenção.;Uma mulher sem o homem é como um peixe sem uma bicicleta.;;;;;;;;
+1;Informais;Falsas Alternativas;;Este caso ocorre quando o argumentador propõe um número limitado de alternativas dentre todas as possíveis, em muitos casos já sugerido tendenciosamente, uma delas como sendo a verdadeira.;Se você não está a meu favor, então porque você está contra mim?;;;;;;;;
+1;Informais;Da Divisão;;Esta falácia consiste em assumir que o verdadeiro para um todo, também é verdadeiro para suas partes. Não podemos assumir por exemplo que um coral afinado e melódico seja composto por cantores individualmente afinados e melódicos.;João sabe que o time de futebol de seu filho perdeu o campeonato da escola, indignado disse-lhe: 'Que droga filho, porque você jogou tão mal?';;;;;;;;
+1;Informais;Falácia da Equivocação;;Nesta falácia usa-se uma palavra ou noção que possui dois sentidos diferentes. Em qual durante a própria falácia usa-se ora um desses sentidos ora outro tipicamente mudando de premissa para premissa ou de premissa para conclusão.;Somente o homem é um animal racional. Nenhuma mulher é homem, portanto, nenhuma mulher é racional.;;;;;;;;
+1;Informais;Apelo ao Ridículo;;"Consiste na introdução de passagem ridicularizadora no argumento, com o intuito de encobrir a incapacidade (ou falta de vontade) de se suportar o argumento apropriadamente.
+O humor, na verdade, pode ser usado durante uma discussão pois, no mínimo, tem o efeito ""terapêutico"" de reduzir as tensões e atritos emocionais, tornando o ambiente mais descontraído. Não pode, porém, ser usado como suporte de argumentação ou para auxiliar descrédito do oponente eu de seu argumento.";;;;;;;;;
+1;Informais;Apelo à Ênfase (ou Falácia do Acento Impróprio);;Ocorre quando a sentença é direcionada a uma conclusão inadequada por força de uma acentuação tendenciosa ou incomum de uma palavra ou frase.;"Um estudande diz a seus colegas:
+Sempre vejo o prof. Roberto, mas nunca com sua mulher.
+
+A ênfase no final da frase é falaciosa, pois quer deixar implícito que o estudante viu o prof. Roberto com outra mulher que não sua esposa, embora ele esteja querendo dizer que nunca viu o prof. Roberto acompanhado";"Alguns órgãos da imprensa, na tentativa de causar um maior impacto com a manchete de seus jornais, frequentemente cometem a falácia do Acento Impróprio. Suponha, por exemplo, que o Presidente da República tenha assinado um memorando, distribuído a todos os ministérios e secretarias do governo, exaltando a todos a manter uma postura de contratação de pessoas totalmente isenta e imparcial, evitando cometer erros de discriminação cintra minorias como negros, homossexuais, etc.
+Veja como isso poderia ser noticiado de maneira falaciosa:
+
+""Governo emite comunicado privilegiando homossexuais.""";;;;;;;
+1;Informais;Apelo ao Novo;;"É o oposto do Apelo à Tradição. No Apelo ao Novo, assume-se que uma idéia, lei, política, etc, é boa, simplesmente porque é nova.
+
+A defesa de uma idéia, ou de uma conclusão de um argumento, deve sempre endepender do fato de ser novo ou velho. O que vale é o respaldo por premissas aceitáveis e que suportem corretamente o que se está oferecendo.";"""Nosso time perdeu feio na temporada passada, mas agora as coisas vão mudar, graças ao novo técnico que acabamos de contratar.""
+
+Só porque é um novo técnico, sem dizer se ele tem referências ou um currículo de boas campanhas, não dá para acreditar que tudo irá mudar. Pode continuar tudo a mesma coisa, ou então até mesmo piorar.";;;;;;;;
+1;Informais;Apelo à Emoção (ou Apelo ao Sentimento);;"Esse tipo de falácia ocorre quando se tenta argumentar com alguém que faz uso de fortes emoções ou sentimentos - positivos ou negativos - em vez de apresentar premissas e evidências convincentes. As emoções tipicamente usadas são a inveja, a raiva, o medo - variantes deste caso são chamadas de Apelo à Força - ou o amor, a cobiça, a culpa, vergonha, etc.
+Sentimentos usados com frequência incluem patiotrismo, noções de cunho familiar, etc.";"""Sei que vocês, desta cidade, não aguentam mais ver ricos e poderosos se banqueteando com o dinheiro público, enquanto nós aqui passamos necessidade. Por isso, peço seu voto, para poder mudar esse estado de coisas.""
+
+O candidato está argumentando que, por causa da injustiça social que o povo está sofrendo, ele deve ser eleito.";;;;;;;;
+1;Informais;Envenenando o Poço;;"Este tipo de incorreção caracteriza-se pela rejeição de um argumento baseado em uma condição negativa - não importa se verdadeira ou falsa - acerca da pessoa que o proferiu. 
+A situação particular do sexo, idade, aça, religião, profissão, etc. em nada deve afetar a aceitação de argumentos proferidos por essa pessoa, mesmo sobre os temas nos quais possa ter motivações ou interesses particulares. 
+Podemos, no máximo ter motivo para desacreditar seu testemunho (veja Ad Hominem), mas não podemos dispensar sus argumentos apenas por essa razão.";"""Cale a boca, criança metida, como pode querer dar conselhos a um adulto?""
+
+O adulto cometeu, nessa passagem, um evenenamento de poço: ao não aceitar o argumento da criança, essa pessoa categorizou-a como incompetente para proferir argumentos para adulto.";;;;;;;;
+1;Informais;Generalização Apressada;Hasty Generalization;"Os argumentos que cometem essa falácia usam premissas insuficientes para garantir a conclusão numa construção.
+Também ocorre quando a amostra usada para obter as evidÊncias é pequena demais.
+
+A Generalização Apressada também engloba as falácias chamadas de Evidências Anedotais, nesses casos toma-se uma descrição feita por um indivíduo como fato, suportando uma generalização mais abrangente.";"""Todas as relações entre autor e editor começam com um aperto de mão e termina com um oficial de justiça entre os dois.""";"Uma versão mais problemática dessa categoria é a falácia do fato isolado, que ocorre quando se generaliza um único evento para toda uma categoria.
+
+""Acabo de sair de um táxi cujo motorista confessou não gostar de pessoas negras. Acho que todos os taxistas são racistas.""";;;;;;;
+1;Informais;Falácia do Acidente;;;;;;;;;;;
+1;Informais;Falácia da Esperança;;;;;;;;;;;
+1;Informais;Culpado por Associação;;;;;;;;;;;
+1;Informais;"História ""Just So""";;;;;;;;;;;
